@@ -15,8 +15,9 @@ use Illuminate\Http\Request;
 |
 */
 Route::get('test', function(){
+    echo "";
     return "login";
-})->middleware(['name1:ahmed']);
+})->middleware(['name1:hassan']);
 Route::group(['middleware' => 'api','prefix' => 'auth'], function () {
     Route::post('register', 'AuthController@register');
     Route::post('login', 'AuthController@login');
